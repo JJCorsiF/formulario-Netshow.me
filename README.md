@@ -29,7 +29,7 @@ Para a criação dos testes, utilizei o framework Codeception:
 ### Frontend
 Para o Frontend, é necessário instalar as dependências com o NPM:
 
-> cd ./assets/aplicacao/
+> cd ./../../assets/aplicacao/
 > 
 > npm install
 
