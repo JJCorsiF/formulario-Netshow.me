@@ -1,0 +1,11 @@
+.custom-file-label::after {
+	content: "Escolher" !important;
+}
+
+.custom-file-control:lang(pt-br):empty::after {
+	content: "Escolher arquivo...";
+}
+
+.custom-file-control:lang(pt-br)::before {
+	content: "Escolher";
+}

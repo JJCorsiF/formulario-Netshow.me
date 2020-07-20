@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# start of added rules
+SetEnv ENVIRONMENT testing
+RewriteRule .* - [E=ENVIRONMENT:testing]
+
+RewriteCond %{HTTPS} off
+RewriteCond %{ENV:ENVIRONMENT} !^testing$
+RewriteRule ^.*$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{ENV:ENVIRONMENT} ^development$
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# end of added rules
+
+RewriteCond $1 !^(index\.php|resources|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+# If we don't have mod_rewrite installed, all 404's
+# can be sent to index.php, and everything works as normal.
+
+ErrorDocument 404 /index.php
+</IfModule>
