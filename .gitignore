@@ -1,3 +1,4 @@
 app/aplicacao/vendor/*
 assets/aplicacao/node_modules/*
 public/anexos/*
+!public/anexos/.gitkeep
