@@ -1,84 +1,84 @@
 {
-    "name": "jjcorsif/formulario-netshow.me",
-    "description": "Um formulário para a Netshow.me",
-    "version": "1.0.0",
-    "time": "2020-07-14",
-    "type": "project",
-    "keywords": [],
-    "license": "proprietary",
-    "archive": {},
-    "authors": [
-        {
-            "name": "João José Corsi Filho",
-            "email": "jjcorsif@hotmail.com",
-            "homepage": "https://github.com/JJCorsiF/",
-            "role": "Desenvolvedor PHP"
-        }
-    ],
-    "autoload": {
-        "classmap": [
-            "codigo-fonte/"
-        ],
-        "exclude-from-classmap": [],
-        "files": [],
-        "psr-4": {
-            "": [
-                ""
-            ],
-            "JJCorsiF\\Aplicacao\\": [
-                ""
-            ],
-            "JJCorsiF\\Aplicacao\\CodigoFonte\\": [
-                "codigo-fonte/"
-            ]
-        }
-    },
-    "autoload-dev": {
-        "classmap": [
-            "testes/"
-        ],
-        "exclude-from-classmap": [
-            "testes/_ci_phpunit_test/",
-            "testes/_data/",
-            "testes/_output/",
-            "testes/_support/"
-        ],
-        "files": [],
-        "psr-4": {
-            "JJCorsiF\\Aplicacao\\Testes\\": [
-                "testes/"
-            ]
-        }
-    },
-    "bin": [],
-    "config": {
-        "platform": {
-            "php": "7.3.19"
-        }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "require": {
-        "php": "~7.3.19",
-        "codeigniter/framework": "~3.1",
-        "twbs/bootstrap": "4.5.0",
-        "phpmailer/phpmailer": "^6.1",
-        "ramsey/uuid": "^4.0"
-    },
-    "require-dev": {
-        "codeception/codeception": "~4.1",
-        "codeception/module-asserts": "^1.2",
-        "codeception/module-phpbrowser": "^1.0",
-        "friendsofphp/php-cs-fixer": "~2.13",
-        "phpmd/phpmd": "~2.8",
-        "phpstan/phpstan": "~0.9",
-        "squizlabs/php_codesniffer": "~3.5"
-    },
-    "scripts": {},
-    "suggest": {
-        "paragonie/random_compat": "Provides better randomness in PHP 5.x"
-    },
-    "support": {
-        "email": "jjcorsif@hotmail.com"
-    }
+	"name": "jjcorsif/formulario-netshow.me",
+	"description": "Um formulário para a Netshow.me",
+	"version": "1.0.0",
+	"time": "2020-07-14",
+	"type": "project",
+	"keywords": [],
+	"license": "proprietary",
+	"archive": {},
+	"authors": [
+		{
+			"name": "João José Corsi Filho",
+			"email": "jjcorsif@hotmail.com",
+			"homepage": "https://github.com/JJCorsiF/",
+			"role": "Desenvolvedor PHP"
+		}
+	],
+	"autoload": {
+		"classmap": [
+			"codigo-fonte/"
+		],
+		"exclude-from-classmap": [],
+		"files": [],
+		"psr-4": {
+			"": [
+				""
+			],
+			"JJCorsiF\\Aplicacao\\": [
+				""
+			],
+			"JJCorsiF\\Aplicacao\\CodigoFonte\\": [
+				"codigo-fonte/"
+			]
+		}
+	},
+	"autoload-dev": {
+		"classmap": [
+			"tests/"
+		],
+		"exclude-from-classmap": [
+			"tests/_ci_phpunit_test/",
+			"tests/_data/",
+			"tests/_output/",
+			"tests/_support/"
+		],
+		"files": [],
+		"psr-4": {
+			"JJCorsiF\\Aplicacao\\Testes\\": [
+				"tests/"
+			]
+		}
+	},
+	"bin": [],
+	"config": {
+		"platform": {
+			"php": "7.3.19"
+		}
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"require": {
+		"php": "~7.3.19",
+		"codeigniter/framework": "~3.1",
+		"twbs/bootstrap": "4.5.0",
+		"phpmailer/phpmailer": "^6.1",
+		"ramsey/uuid": "^4.0"
+	},
+	"require-dev": {
+		"codeception/codeception": "~4.1",
+		"codeception/module-asserts": "^1.2",
+		"codeception/module-phpbrowser": "^1.0",
+		"friendsofphp/php-cs-fixer": "~2.13",
+		"phpmd/phpmd": "~2.8",
+		"phpstan/phpstan": "~0.9",
+		"squizlabs/php_codesniffer": "~3.5"
+	},
+	"scripts": {},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"support": {
+		"email": "jjcorsif@hotmail.com"
+	}
 }
