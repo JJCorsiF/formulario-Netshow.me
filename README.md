@@ -121,3 +121,12 @@ No arquivo "smtp.json", é possível configurar o PHPMailer, utilizado para o en
 	"password": "password"
 }
 ```
+
+## Acessando o formulário
+Finalmente, para abrir a página com o formúlario, basta acessar a página no navegador, onde está localizado o seguinte arquivo:
+
+> ./netshow.me/index.php
+
+Exemplo:
+
+> http://localhost/netshow.me/
